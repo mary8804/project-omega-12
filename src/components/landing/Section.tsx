@@ -5,6 +5,7 @@ import type { SectionProps } from "@/types"
 
 const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/437cb4f4-c747-4809-985f-a29156d86869.jpg"
 const HERO_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/636a3e2c-3edd-438a-9ee9-f0f3125d34dc.jpg"
+const ABOUT_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/7383e593-2969-4a12-a89d-b17e3f29239f.jpg"
 
 function Logo() {
   return (
@@ -15,8 +16,9 @@ function Logo() {
   )
 }
 
-export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, icon }: SectionProps & { icon?: string }) {
+export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, icon, extraContent }: SectionProps & { icon?: string; extraContent?: React.ReactNode }) {
   const isHero = id === 'hero'
+  const isAbout = id === 'about'
 
   return (
     <section
@@ -33,6 +35,17 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
+        </div>
+      )}
+
+      {isAbout && (
+        <div className="absolute inset-0 z-0">
+          <img
+            src={ABOUT_BG_URL}
+            alt="Строительство дома"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
       )}
 
@@ -78,6 +91,17 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {content}
+          </motion.p>
+        )}
+
+        {extraContent && (
+          <motion.p
+            className="text-base md:text-lg max-w-2xl mt-4 text-neutral-500 leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isActive ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.35 }}
+          >
+            {extraContent}
           </motion.p>
         )}
 

@@ -5,8 +5,10 @@ export interface Section {
   title: string
   subtitle?: ReactNode
   content?: string
+  extraContent?: string
   showButton?: boolean
   buttonText?: string
+  icon?: string
 }
 
 export interface SectionProps extends Section {
