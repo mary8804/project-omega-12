@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Icon from "@/components/ui/icon"
 
-const TEAM_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/0663801c-dd9d-4f5c-84da-1baef8e6cecc.jpg"
+const TEAM_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/e890c65a-f658-41fb-923d-093d7a755a7a.jpg"
 
 const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/437cb4f4-c747-4809-985f-a29156d86869.jpg"
 
