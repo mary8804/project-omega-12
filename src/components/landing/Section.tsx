@@ -6,6 +6,7 @@ import type { SectionProps } from "@/types"
 const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/437cb4f4-c747-4809-985f-a29156d86869.jpg"
 const HERO_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/636a3e2c-3edd-438a-9ee9-f0f3125d34dc.jpg"
 const ABOUT_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/7383e593-2969-4a12-a89d-b17e3f29239f.jpg"
+const LAND_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/72d12cae-d685-405b-9855-30d69d150205.jpg"
 
 function Logo() {
   return (
@@ -19,6 +20,7 @@ function Logo() {
 export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, icon, extraContent }: SectionProps & { icon?: string; extraContent?: React.ReactNode }) {
   const isHero = id === 'hero'
   const isAbout = id === 'about'
+  const isLand = id === 'land'
 
   return (
     <section
@@ -46,6 +48,17 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/70" />
+        </div>
+      )}
+
+      {isLand && (
+        <div className="absolute inset-0 z-0">
+          <img
+            src={LAND_BG_URL}
+            alt="Геодезическая зарисовка участка"
+            className="w-full h-full object-cover grayscale opacity-40"
+          />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
       )}
 
