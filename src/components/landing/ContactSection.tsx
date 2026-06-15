@@ -25,7 +25,7 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
 
       {/* Фото команды сверху */}
       <motion.div
-        className="relative w-full h-[45%] flex-shrink-0 -mt-6"
+        className="relative w-full h-[50%] flex-shrink-0"
         initial={{ opacity: 0 }}
         animate={isActive ? { opacity: 1 } : {}}
         transition={{ duration: 0.7 }}
@@ -33,7 +33,7 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
         <img
           src={TEAM_URL}
           alt="Команда АРТСТРОЙ"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
         <motion.div
