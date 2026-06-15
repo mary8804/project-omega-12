@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Section from './Section'
+import ContactSection from './ContactSection'
 import Layout from './Layout'
 import { sections } from './sections'
 
@@ -44,7 +45,7 @@ export default function LandingPage() {
   return (
     <Layout>
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
-        {sections.map((section, index) => (
+        {[...sections, { id: 'contacts' }].map((section, index) => (
           <button
             key={section.id}
             className={`w-3 h-3 rounded-full my-2 transition-all ${
@@ -69,6 +70,7 @@ export default function LandingPage() {
             isActive={index === activeSection}
           />
         ))}
+        <ContactSection isActive={activeSection === sections.length} />
       </div>
     </Layout>
   )
