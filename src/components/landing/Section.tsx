@@ -8,6 +8,7 @@ const HERO_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b
 const ABOUT_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/7383e593-2969-4a12-a89d-b17e3f29239f.jpg"
 const LAND_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/72d12cae-d685-405b-9855-30d69d150205.jpg"
 const DESIGN_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/3d549cba-2cf4-4274-8dba-313d55217816.jpg"
+const CONTROL_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/50327f62-48fe-472a-a23b-3e023b51db4e.jpg"
 
 function Logo() {
   return (
@@ -23,6 +24,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
   const isAbout = id === 'about'
   const isLand = id === 'land'
   const isDesign = id === 'design'
+  const isControl = id === 'control'
 
   return (
     <section
@@ -72,6 +74,17 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             className="w-full h-full object-cover grayscale opacity-30"
           />
           <div className="absolute inset-0 bg-black/65" />
+        </div>
+      )}
+
+      {isControl && (
+        <div className="absolute inset-0 z-0">
+          <img
+            src={CONTROL_BG_URL}
+            alt="Контроль этапов строительства"
+            className="w-full h-full object-cover grayscale opacity-45"
+          />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
       )}
 
