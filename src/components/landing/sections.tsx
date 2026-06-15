@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 export const sections = [
   {
     id: 'hero',
-    subtitle: <Badge variant="outline" className="text-white border-white">АРТСТРОЙ · Загородное строительство</Badge>,
+    subtitle: <Badge variant="outline" className="text-white border-white">Сезон 2026 · Топовый проект года</Badge>,
     title: "Превращаем смелые архитектурные идеи в дома для жизни.",
     showButton: true,
     buttonText: 'Обсудить проект'
@@ -15,21 +15,25 @@ export const sections = [
   },
   {
     id: 'land',
+    icon: 'MapPin',
     title: 'Подбор земельных участков',
     content: 'Поможем найти и оценить участок под ваш будущий дом — с учётом рельефа, коммуникаций и расположения.'
   },
   {
     id: 'design',
+    icon: 'PenTool',
     title: 'Проектирование',
     content: 'Разрабатываем индивидуальные архитектурные проекты, которые отражают ваш характер и образ жизни.'
   },
   {
     id: 'control',
+    icon: 'ShieldCheck',
     title: 'Контроль на каждом этапе',
     content: 'Ведём ваш дом от первой линии чертежа до вручения ключей — с прозрачным контролем качества на каждом шаге.'
   },
   {
     id: 'join',
+    icon: 'Home',
     title: 'Готовый дом вашей мечты',
     content: 'Готовы построить уникальный загородный дом? Расскажите о своей идее — и мы воплотим её в жизнь.',
     showButton: true,
