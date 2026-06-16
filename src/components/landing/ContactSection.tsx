@@ -84,7 +84,7 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
               </div>
               <div>
                 <p className="text-neutral-500 text-xs uppercase tracking-widest mb-1">Офис в Рязани</p>
-                <p className="text-white font-medium">ул. Тиванова, 7</p>
+                <p className="text-white font-medium">ул. Типанова, 7</p>
               </div>
             </div>
           </motion.div>
@@ -114,8 +114,8 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
               </div>
               <div>
                 <p className="text-neutral-500 text-xs uppercase tracking-widest mb-1">Предложения о сотрудничестве и коммерческие</p>
-                <a href="mailto:" className="text-white font-medium hover:text-amber-400 transition-colors italic text-neutral-500">
-                  Укажите email
+                <a href="mailto:info@артстрой.store" className="text-white font-medium hover:text-amber-400 transition-colors">
+                  info@артстрой.store
                 </a>
               </div>
             </div>
