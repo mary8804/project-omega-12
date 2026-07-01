@@ -3,13 +3,13 @@ import Icon from "@/components/ui/icon"
 
 const TEAM_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/e890c65a-f658-41fb-923d-093d7a755a7a.jpg"
 
-const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/255ba6a4-44e6-4637-9f25-ee0c40e85b95.jpg"
+const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/034d6a5c-4b4c-4775-9ac4-ed8f266df33c.jpg"
 
 function Logo() {
   return (
     <div className="fixed top-6 left-8 z-40 flex items-center gap-3">
-      <img src={LOGO_URL} alt="АРТСТРОЙ" className="w-10 h-10 rounded-sm object-cover" />
-      <span className="text-white font-bold text-lg tracking-widest uppercase">АРТСТРОЙ</span>
+      <img src={LOGO_URL} alt="СтройПроДом" className="w-10 h-10 rounded-sm object-cover" />
+      <span className="text-white font-bold text-lg tracking-widest uppercase">СтройПроДом</span>
     </div>
   )
 }
@@ -128,7 +128,7 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
           animate={isActive ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          © 2026 АРТСТРОЙ. Все права защищены.
+          © 2026 СтройПроДом. Все права защищены.
         </motion.p>
       </div>
     </section>
