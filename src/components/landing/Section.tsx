@@ -4,23 +4,14 @@ import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 import type { SectionProps } from "@/types"
 import OrderModal from "@/components/OrderModal"
+import Logo from "@/components/landing/Logo"
 
-const LOGO_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/034d6a5c-4b4c-4775-9ac4-ed8f266df33c.jpg"
 const HERO_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/636a3e2c-3edd-438a-9ee9-f0f3125d34dc.jpg"
 const ABOUT_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/7383e593-2969-4a12-a89d-b17e3f29239f.jpg"
 const LAND_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/72d12cae-d685-405b-9855-30d69d150205.jpg"
 const DESIGN_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/3d549cba-2cf4-4274-8dba-313d55217816.jpg"
 const CONTROL_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/50327f62-48fe-472a-a23b-3e023b51db4e.jpg"
 const JOIN_BG_URL = "https://cdn.poehali.dev/projects/00b48ea9-6036-45e2-b9e8-7b33e17c233f/files/3431a4ea-3f2b-4521-8500-729d7f2eea46.jpg"
-
-function Logo() {
-  return (
-    <div className="fixed top-6 left-8 z-40 flex items-center gap-3">
-      <img src={LOGO_URL} alt="СтройПроДом" className="w-10 h-10 rounded-sm object-cover" />
-      <span className="text-white font-bold text-lg tracking-widest uppercase">СтройПроДом</span>
-    </div>
-  )
-}
 
 export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText, icon, extraContent }: SectionProps & { icon?: string; extraContent?: React.ReactNode }) {
   const [modalOpen, setModalOpen] = useState(false)
