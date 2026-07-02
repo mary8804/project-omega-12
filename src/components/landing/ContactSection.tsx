@@ -74,7 +74,7 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
               </div>
               <div>
                 <p className="text-neutral-500 text-xs uppercase tracking-widest mb-1">Офис в Рязани</p>
-                <p className="text-white font-medium">ул. Типанова, 7</p>
+                <p className="text-white font-medium">ул. Павлова, д. 5</p>
               </div>
             </div>
           </motion.div>
