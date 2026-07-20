@@ -104,8 +104,8 @@ export default function ContactSection({ isActive }: ContactSectionProps) {
               </div>
               <div>
                 <p className="text-neutral-500 text-xs uppercase tracking-widest mb-1">Предложения о сотрудничестве и коммерческие</p>
-                <a href="mailto:info@артстрой.store" className="text-white font-medium hover:text-amber-400 transition-colors">
-                  info@артстрой.store
+                <a href="mailto:mary8804@mail.ru" className="text-white font-medium hover:text-amber-400 transition-colors">
+                  mary8804@mail.ru
                 </a>
               </div>
             </div>
